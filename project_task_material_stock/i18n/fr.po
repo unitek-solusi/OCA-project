@@ -122,9 +122,11 @@ msgid "Products"
 msgstr "Articles"
 
 #. module: project_task_material_stock
-#: model:ir.model,name:project_task_material_stock.model_project_project
-msgid "Project"
-msgstr "Projet"
+#: model:stock.picking.type,name:project_task_material_stock.project_task_material_picking_type
+#, fuzzy
+#| msgid "Task Material Used"
+msgid "Project Task Material Operations"
+msgstr "Matériaux utilisés pour la tâche"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_project_location_source_id
@@ -170,15 +172,30 @@ msgid "Transfer Materials"
 msgstr "Transférer les matériaux"
 
 #. module: project_task_material_stock
+#: model:ir.model.fields,field_description:project_task_material_stock.field_project_task_picking_id
+#, fuzzy
+#| msgid "Transfer Materials"
+msgid "Transfer Reference"
+msgstr "Transférer les matériaux"
+
+#. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task_material_product_uom_id
 msgid "Unit of Measure"
 msgstr "Unité de mesure"
 
 #. module: project_task_material_stock
-#: code:addons/project_task_material_stock/models/project_task.py:112
+#: model:ir.model,name:project_task_material_stock.model_project_project
+msgid "WBS element"
+msgstr ""
+
+#. module: project_task_material_stock
+#: code:addons/project_task_material_stock/models/project_task.py:118
 #, python-format
 msgid ""
 "You can't move to a not consume stage if there are already analytic lines"
 msgstr ""
 "Vous ne pouvez pas déplacer vers un état de non-consommation si il y a déjà "
 "des lignes analytiques"
+
+#~ msgid "Project"
+#~ msgstr "Projet"

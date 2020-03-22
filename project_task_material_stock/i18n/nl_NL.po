@@ -120,9 +120,11 @@ msgid "Products"
 msgstr ""
 
 #. module: project_task_material_stock
-#: model:ir.model,name:project_task_material_stock.model_project_project
-msgid "Project"
-msgstr "Project"
+#: model:stock.picking.type,name:project_task_material_stock.project_task_material_picking_type
+#, fuzzy
+#| msgid "Task Material Used"
+msgid "Project Task Material Operations"
+msgstr "Taakmateriaal verbruikt"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_project_location_source_id
@@ -167,13 +169,26 @@ msgid "Transfer Materials"
 msgstr ""
 
 #. module: project_task_material_stock
+#: model:ir.model.fields,field_description:project_task_material_stock.field_project_task_picking_id
+msgid "Transfer Reference"
+msgstr ""
+
+#. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task_material_product_uom_id
 msgid "Unit of Measure"
 msgstr ""
 
 #. module: project_task_material_stock
-#: code:addons/project_task_material_stock/models/project_task.py:112
+#: model:ir.model,name:project_task_material_stock.model_project_project
+msgid "WBS element"
+msgstr ""
+
+#. module: project_task_material_stock
+#: code:addons/project_task_material_stock/models/project_task.py:118
 #, python-format
 msgid ""
 "You can't move to a not consume stage if there are already analytic lines"
 msgstr ""
+
+#~ msgid "Project"
+#~ msgstr "Project"
