@@ -45,6 +45,9 @@
 
     <record id="project_type_search" model="ir.ui.view">
         <field name="model">project.type</field>
+        <field name="inherit_id" ref=""/>
+        <!-- field name="mode">primary</field -->
+        <field name="type">search</field>
         <field name="arch" type="xml">
             <search string="Type">
                 <field name="complete_name"/>
